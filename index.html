@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang=”pt-br”>
+
+<head>
+	<!-- 
+	=============================================================
+
+	LCP (LISTA DE COMPRAS PERSONALIZADAS): 
+	Aplicação Android para Auxílio na Criação de uma Lista de Compras 
+
+	Feito por: 
+	Denilson Fabiano de Araujo 
+	Izabela Aquino de Oliveira
+	Weslei Giovani Evaristo da Silva
+
+	=============================================================
+	 -->
+
+	<meta charset="UTF-8">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<!-- Tema: Awesome Landing Page by Creative Tim -->
+	<!-- 2016 http://www.creative-tim.com  -->
+	<link href="assets/css/bootstrap.css" rel="stylesheet" />
+	<link href="assets/css/landing-page.css" rel="stylesheet"/>
+	<link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/50f3cf70e2.js" crossorigin="anonymous"></script>
+
+	<!-- Animation -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<script src="assets/js/wow.min.js"></script>
+	<script>new WOW().init();</script>
+
+	<!-- Fontes Google font -->
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- favicon -->
+	<link href="images/favicon.png" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+	<!-- titulo -->
+	<title>LCP: Lista de Compras Personalizadas</title>
+	<meta name="title" content="LCP: Aplicação Android para Auxílio na Criação de uma Lista de Compras">	
+	<meta property="og:title" content="LCP: Aplicação Android para Auxílio na Criação de uma Lista de Compras">
+	<meta property="og:site_name" content="LCP: Aplicação Android para Auxílio na Criação de uma Lista de Compras">
+	<meta property="og:description" content="Tenha um maior controle sobre suas compras com a aplicação Android LCP, controle suas cumpras, gerenciamento de estoque.">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- thema -->
+	<meta name="theme-color" content="#222">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#222">
+	<meta name="msapplication-navbutton-color" content="#222">
+
+</head>
+    <body class="landing-page landing-page1">
+    	<!-- Barra de progresso -->
+    	<div class="progress-container-bar" id="progress-container-bar">
+    		<div class="progress-bar" id="js-barraDeLeitura"></div>
+    	</div> 
+    	<!-- Menu fixo -->
+    	<nav class="navbar navbar-transparent navbar-top"  role="navigation" id="fixbar" style="-moz-transition:  1s; -o-transition: 1s; -webkit-transition:  1s; transition: 1s; background-color: rgba(0,0,0,0.75); top: 5px;">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header"  style="margin-bottom: 5px">
+                    <a href="#Inicio">
+                        <div class="logo-container">
+                            <div class="logo">
+                                <img src="images/ico.png" alt="LCP">
+                            </div>
+                            <div class="brand" style="font-size: medium;">
+                                Lista de Compras Personalizadas
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="example"  style="font-size: small;">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#Instagram" title="Instagram" style="font-size: medium;">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#comments" title="Comentários" style="font-size: medium;">
+                                <i class="far fa-comments"></i> Comentários
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Download" title="Download" style="font-size: medium;">
+                                <i class="fab fa-google-play"></i> Baixar
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+        </nav>
+        <div class="wrapper" id="Inicio">
+            <div class="parallax filter-gradient app" data-color="blue" style="background-color:#2187ff; background-image: linear-gradient(to right, #2187ff, #951095);">
+                <div class="parallax-background">
+                    <div style="background-image: url(images/img/bg_top.png); width: 100%; height: 100%; background-size: 100% 100%"></div>
+                    <!-- <img class="parallax-background-image" src="images/img/bg_top.png"> -->
+                </div>
+                <div class= "container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="description">
+                                <h3>LCP - Lista de Compras Personalizadas</h3>
+                                <br>
+                                <p>
+                                    Este é uma aplicação desenvolvida para a elaboração de listas de compras, simples, prático e rápido. O LCP, é um aplicativo mobile para Android, e tem como principal e única função lhe auxiliar no processo de elaboração de sua lista de compras em cada mês.
+                                </p>
+                                <p>
+                                    <i class="fas fa-hashtag"></i>ListaComprasPersonalizadas
+                                </p>
+                            </div>
+                            <div class="buttons">
+                                <!-- Download do APP -->
+                                <a href="#Download" class="btn btn-neutral btn-lg btn-fill" title="Download"><i class="fab fa-google-play"></i> Baixar</a>
+                            </div>
+                        </div>
+                        <div class="col-md-5  hidden-xs" >
+                            <div class="parallax-image">
+                                <img class="phone mySlides" src="images/slide/scn01.png"/>
+                                <img class="phone mySlides" src="images/slide/scn02.png"/>
+                                <img class="phone mySlides" src="images/slide/scn03.png"/>
+                                <img class="phone mySlides" src="images/slide/scn05.png"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+
+                        <!-- Descrição do APP -->
+            <div class="section section-presentation">
+                <div class="container">
+                    <div class="row">                       
+                        <div class="col-md-5 col-md-offset-1 wow fadeInLeft"  data-wow-delay="0.75s">
+                            <img src="images/img/andoid_scn00.png" style="left: auto !important; right: 0;">
+                        </div>
+                        <div class="col-md-5 wow fadeInRight" data-wow-delay="0.25s">
+                            <div class="description">
+                                <h4 class="header-text"><i class="fas fa-info-circle"></i> O que é o LCP</h4>
+                                <p>
+                                    Com base na ideia de facilitar a criação da lista de compras, você poderá se organizar mais, auxiliando-o na hora de criar, editar, excluir e Atualizar os produtos de sua lista, tudo isso com muito mais facilidade e rapidez. 
+                                    <br><br>
+                                    Com o LCP você poderá aproveitar mais seu tempo enquanto estiver no mercado, além de poder saber quanto foi o seu consumo na compra em tempo real, antes de passar no caixa do mercado.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section-presentation">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.25s">
+                            <div class="description">
+                                <h4 class="header-text"><i class="fas fa-store"></i> Mais facilidade no mercado</h4>
+                                Já te aconteceu de ir ao mercado e esquecer o que tinha que comprar, pois esqueceu a lista de compras? E quanto perde ela?
+                               <br><br>
+                               Com o LCP, você poderá ter suas listas de compras na palma de sua mão, sem a necessidade de nenhum tipo de acesso com a internet. Tudo para simplificar sua vida, sua ida ao mercado.
+                               <br><br>
+                               Chegue ao mercado com as listas já prontas, devendo apenas adicionar o valor dos produtos conforme os confere em tempo real no mercado, enquanto faz a compra.
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-md-offset-1 hidden-xs wow fadeInRight" data-wow-delay="0.75s">
+                            <img src="images/img/andoid_scn01.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section-demo">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 wow fadeInLeft"  data-wow-delay="0.75s" style="padding-top: 80px;">
+                            <div id="description-carousel" class="carousel fade" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <img src="images/slide/sld01.png" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/slide/sld02.png" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/slide/sld03.png" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/slide/sld04.png" alt="">
+                                    </div>
+                                </div>
+                                <ol class="carousel-indicators carousel-indicators-orange">
+                                    <li data-target="#description-carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#description-carousel" data-slide-to="1" class=""></li>
+                                    <li data-target="#description-carousel" data-slide-to="2" class=""></li>
+                                    <li data-target="#description-carousel" data-slide-to="3" class=""></li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-md-offset-1 wow fadeInRight" data-wow-delay="0.25s">
+                            <h4 class="header-text"><i class="fas fa-chart-bar"></i> Grafico de consumo</h4>
+                            <p>
+                                Além da possibilidade de poder adicionar mais de uma lista de compras, algo que permite a visualização de um gráfico, com o balanço de todas as suas compras. Podendo observar os valores gastos entre uma lista de compra e outra.
+                                <br><br>
+                                Para facilitar sua vida, cada lista no gráfico pode ser selecionável, podendo ver os itens conditos nesta lista e suas informações.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section-presentation" style="margin-top: 0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 wow fadeInLeft"data-wow-delay="0.25s">
+                            <div class="description">
+                                <h4 class="header-text"><i class="fas fa-map-marked-alt"></i> Quando e Onde for</h4>
+                                <p>
+                                    Como todas os dados das listas são salvos localmente, para usar o LCP você não precisa de nenhum tipo de conexão com a internet, podendo usar em todos lugares a qualquer momento do dia. 
+                                    <br><br>
+                                    Com rapidez e sem burocracia, simplificando uma atividade monótona, a ida ao mercado, algo mais rápido e eficiente. Tudo para simplificar sua vida.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-md-offset-1 hidden-xs wow fadeInRight" data-wow-delay="0.75s">
+                            <img src="images/img/andoid_scn02.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section-features">
+                <div class="container">
+                    <h4 class="header-text text-center">Na palma de sua mão:</h4>
+                    <div class="row">
+                        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.25s">
+                            <div class="card card-orange">
+                                <div class="icon">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         width="50%" height="50%" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                                    <g>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" fill="#2187ff" d="M382.913,225.339c0,1.284,0,2.25,0,3.216
+                                            c0,75.067,0.066,150.135-0.076,225.202c-0.02,10.438-4.568,19.463-11.332,27.259c-6.324,7.287-14.436,11.94-23.695,14.335
+                                            c-3.729,0.964-7.738,1.154-11.619,1.157c-91.896,0.066-183.795,0.095-275.692,0.033c-16.599-0.011-29.748-7.086-39.071-20.798
+                                            c-4.858-7.144-7.446-15.148-7.443-23.939c0.038-113.726,0.043-227.452,0.044-341.178c0-10.687,3.771-19.942,10.472-28.115
+                                            c6.088-7.426,13.682-12.7,23.025-14.952c4.709-1.135,9.649-1.772,14.491-1.808c24.077-0.178,48.156-0.082,72.234-0.081
+                                            c0.817,0,1.635,0,2.574,0c0.484-18.358,7.241-33.81,20.821-45.931C169.732,8.95,184.114,3.896,200.338,4.243
+                                            c8.032,0.172,15.78,1.894,23.075,5.183c7.156,3.227,13.539,7.657,19.039,13.365c5.555,5.761,9.836,12.282,12.949,19.635
+                                            c3.109,7.34,4.234,15.055,4.541,23.121c15.25,0,30.385,0,46.236,0c-1.824,1.883-3.189,3.336-4.602,4.744
+                                            c-13.439,13.403-26.906,26.781-40.328,40.203c-14.836,14.833-29.662,29.673-44.41,44.591c-2.041,2.066-4.031,3.099-7.088,3.085
+                                            c-29.992-0.135-59.988-0.214-89.979,0.002c-8.544,0.062-13.99-5.545-13.806-13.875c0.22-9.91,0.053-19.828,0.053-29.743
+                                            c0-0.897,0-1.796,0-2.845c-0.947-0.045-1.673-0.11-2.398-0.11c-12.164-0.008-24.328-0.013-36.492-0.006
+                                            c-4.746,0.003-7.169,2.423-7.168,7.227c0.003,108.228,0.014,216.454,0.03,324.682c0.001,4.738,2.34,7.085,7.024,7.086
+                                            c87.646,0.013,175.295,0.021,262.941,0.024c4.84,0,7.033-2.392,7.033-7.614c0.002-50.905,0-101.812,0-152.718
+                                            c0-4.999,0.311-10.023-0.102-14.987c-0.293-3.525,1.309-5.712,3.516-7.891c4.535-4.477,9.033-8.991,13.563-13.474
+                                            c4.705-4.657,9.432-9.292,14.143-13.944C372.921,235.232,377.726,230.471,382.913,225.339z M221.515,65.534
+                                            c0.256-12.333-10.113-22.93-22.932-22.936c-13.133-0.006-22.471,10.293-23.163,21.468c-0.905,14.619,11.022,24.135,21.696,24.687
+                                            C211.757,89.51,222.118,77.057,221.515,65.534z"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" fill="#2187ff" d="M423.976,145.484c-0.242,2.454-1.15,4.163-2.834,5.818
+                                            c-9.563,9.397-19.033,18.888-28.486,28.397c-6.477,6.516-12.832,13.153-19.322,19.658c-4.102,4.111-8.406,8.021-12.52,12.123
+                                            c-4.977,4.961-9.799,10.074-14.77,15.039c-8.895,8.883-17.873,17.681-26.77,26.56c-6.473,6.459-12.846,13.015-19.311,19.48
+                                            c-4.123,4.125-8.367,8.127-12.486,12.255c-3.76,3.769-7.381,7.677-11.141,11.446c-5.156,5.169-10.387,10.265-15.584,15.393
+                                            c-1.764,1.739-3.725,3.324-5.24,5.258c-2.068,2.646-4.664,3.762-7.904,4.238c-6.75,0.995-13.457,2.281-20.182,3.455
+                                            c-6.633,1.158-13.264,2.33-19.896,3.488c-6.719,1.173-13.445,2.296-20.155,3.518c-5.009,0.913-9.96,2.284-15.003,2.831
+                                            c-4.762,0.516-8.998-1.43-12.37-4.849c-3.475-3.522-4.823-7.845-4.124-12.753c0.849-5.951,1.653-11.912,2.652-17.839
+                                            c0.891-5.284,2.118-10.51,3.023-15.791c1.391-8.108,2.563-16.253,3.959-24.36c0.934-5.426,2.516-10.774,3.015-16.229
+                                            c0.377-4.118,2.671-6.526,5.267-9.103c8.689-8.628,17.311-17.322,25.971-25.98c17.568-17.564,35.154-35.111,52.713-52.684
+                                            c8.668-8.673,17.273-17.408,25.941-26.079c16.545-16.551,33.117-33.076,49.678-49.612c3.664-3.659,7.342-7.303,10.979-10.988
+                                            c2.77-2.806,8.4-2.404,10.891,0.056c6.066,5.994,12.178,11.944,18.195,17.987c9.783,9.824,19.516,19.701,29.254,29.571
+                                            c4.398,4.46,8.705,9.013,13.15,13.425c3.787,3.758,7.857,7.24,11.492,11.133C423.21,141.58,423.364,143.745,423.976,145.484z
+                                             M341.153,108.676c-0.082-0.205-0.162-0.41-0.242-0.615c-1.875,0.873-4.078,1.376-5.559,2.691
+                                            c-3.563,3.164-6.779,6.714-10.146,10.098c-8.926,8.97-17.855,17.937-26.787,26.9c-11.25,11.287-22.488,22.584-33.758,33.848
+                                            c-9.029,9.023-18.068,18.037-27.17,26.986c-2.971,2.92-5.225,5.883-4.094,10.459c0.895,3.613,3.115,5.55,6.498,6.602
+                                            c3.32,1.031,6.148-0.053,8.404-2.256c6.324-6.178,12.439-12.568,18.693-18.816c4.057-4.053,8.256-7.964,12.313-12.016
+                                            c2.967-2.962,5.748-6.109,8.717-9.067c5.219-5.199,10.549-10.285,15.775-15.475c8.109-8.053,16.188-16.137,24.246-24.239
+                                            c6.496-6.532,12.943-13.115,19.42-19.668c2.59-2.622,3.914-7.535,2.283-10.344C347.909,110.603,345.354,108.13,341.153,108.676z
+                                             M189.085,246.671c-0.216,0.786-0.469,1.485-0.598,2.208c-1.182,6.663-2.324,13.332-3.514,19.994
+                                            c-0.969,5.432-2.031,10.846-2.954,16.284c-0.334,1.969-0.058,3.708,1.632,5.302c5.627,5.306,11.175,10.705,16.513,16.299
+                                            c1.304,1.365,2.407,1.457,3.897,1.184c5.99-1.102,11.971-2.258,17.967-3.32c7.117-1.26,14.248-2.443,21.309-3.649
+                                            c0-7.886,0-15.514,0-23.41c-10.318,0-20.508,0-30.963,0c0-10.457,0-20.647,0-30.891
+                                            C204.536,246.671,196.97,246.671,189.085,246.671z"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" fill="#2187ff" d="M416.22,4.147c8.18-0.211,15.283,2.687,21.117,8.188
+                                            c7.338,6.92,14.297,14.242,21.434,21.375c6.488,6.486,13.197,12.769,19.398,19.519c2.482,2.703,4.1,6.305,5.695,9.694
+                                            c2.596,5.515,2.543,11.54,1.418,17.268c-1.059,5.386-3.566,10.438-7.549,14.48c-7.912,8.032-15.848,16.04-23.828,24.004
+                                            c-2.613,2.608-5.23,5.255-8.135,7.513c-3.053,2.374-6.832,1.724-9.568-0.981c-7.379-7.296-14.859-14.492-22.203-21.822
+                                            c-6.807-6.792-13.461-13.736-20.238-20.558c-7.689-7.742-15.441-15.422-23.166-23.13c-1.9-1.896-3.797-3.797-5.699-5.693
+                                            c-3.305-3.295-3.443-8.12-0.168-11.414c9.018-9.071,18.141-18.036,27.117-27.146c3.537-3.589,7.104-7.131,11.961-8.758
+                                            c3.994-1.338,8.15-2.193,12.234-3.262C416.101,3.666,416.159,3.907,416.22,4.147z"/>
+                                    </g>
+                                    Seu navegador não aceita SVG.
+                                    </svg>
+                                </div>
+                                <div class="text">
+                                    <h4>Crie sua Lista de Compras!</h4>
+                                    <p>Crie listas de compras facilmente adicionando os produtos que deseja, podendo remover, aumentar ou diminuir a quantidade, como você quiser, tudo simples e de modo organizado.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.50s">
+                            <div class="card card-orange">
+                                <div class="icon">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         width="50%" height="50%" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                                    <g>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" fill="#2187ff" d="M216.933,251.361c0-1.381,0-2.375,0-3.37
+                                            c0-37.325-0.009-74.649,0.007-111.974c0.004-8.803,3.606-16.171,9.333-22.613c4.046-4.551,9.11-7.751,14.806-9.654
+                                            c4.892-1.635,10.049-1.919,15.209-0.964c9.574,1.771,16.875,7.102,22.268,14.909c4.15,6.008,5.83,12.973,5.83,20.297
+                                            c0.001,24.078,0,48.156,0,72.233c0,0.875,0,1.75,0,3.082c4.277-3.772,8.728-6.26,13.741-7.657
+                                            c8.453-2.358,16.695-2.063,24.936,1.322c5.516,2.266,10.24,5.389,14.207,9.785c0.825,0.915,1.723,1.272,3.223,0.688
+                                            c3.779-1.474,7.674-2.713,11.606-3.714c4.56-1.161,9.007-0.009,13.447,1.163c7.632,2.014,14.404,5.774,18.677,12.269
+                                            c2.589,3.937,5.003,3.629,8.564,2.947c5.272-1.009,10.546-0.416,15.815,0.564c7.865,1.463,14.532,5.207,19.807,10.99
+                                            c2.767,3.033,4.585,6.993,6.527,10.693c1.435,2.734,2.618,5.657,3.49,8.62c1.921,6.528,2.966,13.247,2.943,20.055
+                                            c-0.035,10.737,0.056,21.497-0.611,32.203c-0.351,5.619-1.986,11.2-3.438,16.693c-1.188,4.489-2.825,8.877-4.527,13.206
+                                            c-1.198,3.051-2.824,5.936-4.283,8.882c-3.805,7.683-8.082,15.173-11.285,23.098c-2.467,6.103-4.02,12.67-5.195,19.173
+                                            c-1.254,6.937-6.664,13.893-14.259,14.975c-2.284,0.326-4.575,0.861-6.864,0.864c-42.572,0.052-85.146,0.06-127.719,0.021
+                                            c-9.636-0.009-18.391-2.955-25.755-9.175c-4.784-4.041-7.886-9.473-10.504-15.15c-1.75-3.796-3.646-7.523-5.514-11.265
+                                            c-2.175-4.357-4.273-8.761-6.621-13.024c-2.242-4.072-4.663-8.054-7.18-11.963c-4.246-6.595-8.46-13.223-13.02-19.6
+                                            c-2.753-3.851-6.222-7.183-9.209-10.877c-3.52-4.354-7.458-8.223-12.253-11.119c-2.849-1.721-5.84-3.206-8.786-4.761
+                                            c-7.16-3.778-12.667-9.083-15.827-16.686c-3.021-7.268-2.864-14.798-0.936-22.081c2.323-8.771,7.566-15.888,15.327-20.817
+                                            c8.435-5.357,17.703-7.407,27.517-5.333c6.662,1.407,12.76,4.47,18.516,8.141C211.453,248.038,214.008,249.563,216.933,251.361z"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" fill="#2187ff" d="M304.385,112.503c-8.353-16.089-20.07-27.451-37.424-32.75
+                                            c0-6.325,0.001-12.813,0-19.301c0-3.5,0-6.999-0.005-10.499c-0.007-5.931-3.317-9.269-9.217-9.27
+                                            c-51.16-0.004-102.32,0.047-153.48-0.09c-4.605-0.013-9.431,4.869-9.424,9.432c0.12,79.656,0.137,159.313,0.007,238.97
+                                            c-0.009,5.468,4.191,10.339,10.114,10.226c6.58-0.126,13.166-0.088,19.746,0.043c0.904,0.018,2.186,0.756,2.621,1.536
+                                            c5.917,10.604,14.351,18.631,24.849,24.565c3.62,2.047,7.33,3.933,11.15,5.973c-8.44,9.319-8.337,21.375-3.719,29.171
+                                            c7.286,12.3,20.202,14.618,31.644,10.441c4.512,8.698,9.051,17.45,13.851,26.703c-1.553,0-2.43,0-3.308,0
+                                            c-34.996,0.002-69.991,0.006-104.987,0.006c-7.458,0-14.639-1.341-21.025-5.326c-4.314-2.692-8.345-5.875-10.931-10.434
+                                            c-1.839-3.241-4.082-6.401-5.139-9.9c-1.177-3.896-1.677-8.135-1.68-12.225c-0.075-106.153-0.052-212.306-0.026-318.459
+                                            c0.002-7.036,1.518-13.78,5.287-19.752c4.473-7.086,10.508-12.392,18.56-15.355c4.911-1.807,9.931-2.429,15.045-2.433
+                                            c56.243-0.048,112.485-0.038,168.728-0.044c5.912-0.001,11.817,0.654,17.088,3.292c6.854,3.432,12.541,8.172,16.434,15.222
+                                            c3.841,6.954,5.27,14.164,5.266,21.881c-0.012,21.831-0.016,43.661-0.023,65.492C304.385,110.434,304.385,111.249,304.385,112.503z
+                                            "/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" fill="#2187ff" d="M324.831,422.163c23.909,0,47.817-0.002,71.726,0.001
+                                            c7.459,0.001,13.837,2.371,17.777,9.044c1.346,2.278,2.414,5.104,2.461,7.701c0.244,13.324,0.181,26.655,0.082,39.983
+                                            c-0.043,5.76-2.854,10.248-7.375,13.626c-3.54,2.646-7.675,3.633-12.053,3.633c-48.483,0.004-96.967,0.011-145.45-0.007
+                                            c-6.562-0.003-12.112-2.222-16.155-7.653c-2.464-3.312-3.368-7.091-3.388-11.087c-0.062-12.162-0.092-24.326,0.002-36.487
+                                            c0.063-8.168,4.038-14.081,11.401-17.354c2.539-1.128,5.646-1.332,8.497-1.344C276.514,422.121,300.673,422.163,324.831,422.163z
+                                             M364.915,459.066c-0.783,8.722,7.604,15.756,15.247,15.597c7.815-0.162,15.424-6.644,15.3-15.602
+                                            c-0.122-8.884-7.323-15.221-15.367-15.332C372.349,443.622,364.324,450.45,364.915,459.066z"/>
+                                    </g>
+                                    Seu navegador não aceita SVG.
+                                    </svg>
+                                </div>
+                                <div class="text">
+                                    <h4>Consulte-as, onde você estiver!</h4>
+                                    <p>O aplicativo não necessita de conexão à internet para você poder ter acesso as suas listas de compras, podendo assim cria-las e sair de casa despreocupado/a com ou sem internet disponível.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.75s">
+                            <div class="card card-orange">
+                                <div class="icon">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         width="50%" height="50%" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                                        <g>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" fill="#2187ff" d="M407.858,47.211c17.994,0,35.989,0.111,53.982-0.075
+                                                c4.729-0.049,8.669,1.837,11.602,4.805c2.286,2.313,3.98,5.73,3.962,9.493c-0.05,9.83-0.007,19.661-0.007,29.49
+                                                c0.002,26.159-0.068,52.318,0.041,78.476c0.036,8.35-2.899,15.333-9.737,19.874c-5.253,3.488-11.277,5.263-17.965,3.146
+                                                c-4.901-1.552-8.822-4.02-12.188-7.901c-3.048-3.514-6.741-6.459-10.026-9.778c-4.645-4.693-9.155-9.518-13.77-14.242
+                                                c-1.08-1.106-2.258-2.178-3.574-2.958c-0.421-0.25-1.633,0.296-2.135,0.814c-2.214,2.289-4.202,4.799-6.457,7.044
+                                                c-2.99,2.978-6.21,5.726-9.229,8.678c-4.21,4.118-8.324,8.334-12.481,12.506c-8.27,8.301-16.533,16.607-24.812,24.9
+                                                c-8.006,8.021-16.011,16.042-24.048,24.032c-4.3,4.275-8.396,8.819-13.104,12.596c-2.876,2.308-6.644,3.64-10.186,4.934
+                                                c-2.265,0.827-4.836,0.943-7.288,1.099c-5.494,0.347-10.321-1.727-15.089-4.222c-5.118-2.679-8.571-7.165-12.57-11.034
+                                                c-8.897-8.609-17.614-17.406-26.373-26.157c-6.95-6.944-13.863-13.927-20.776-20.908c-4.088-4.128-8.131-8.301-12.228-12.42
+                                                c-1.234-1.241-2.005-1.891-3.708,0.164c-3.175,3.832-7.134,7.007-10.689,10.532c-2.923,2.899-5.721,5.924-8.601,8.868
+                                                c-4.099,4.191-8.155,8.428-12.353,12.518c-3.744,3.647-7.448,7.386-11.547,10.604c-4.975,3.905-11.855,3.647-16.722-0.897
+                                                c-3.821-3.567-7.536-7.248-11.306-10.87c-3.436-3.302-6.794-6.691-10.343-9.867c-6.903-6.179-6.722-16.405,0.065-22.84
+                                                c5.894-5.588,11.27-11.719,16.973-17.513c3.135-3.185,6.502-6.14,9.712-9.253c4.175-4.049,8.309-8.141,12.439-12.238
+                                                c4.005-3.973,7.998-7.96,11.968-11.968c4.538-4.58,8.726-9.579,13.679-13.648c3.185-2.617,7.401-4.069,11.305-5.68
+                                                c1.923-0.793,4.175-0.921,6.298-1.072c5.833-0.416,11.312,1.161,15.965,4.472c4.526,3.22,8.654,7.055,12.689,10.901
+                                                c5.882,5.61,11.521,11.474,17.27,17.224c4.056,4.057,8.124,8.101,12.18,12.157c3.94,3.941,7.872,7.891,11.807,11.837
+                                                c4.107,4.119,8.222,8.23,12.318,12.359c1.956,1.971,3.941,3.918,5.794,5.984c1.126,1.255,1.907,1.276,3.104,0.046
+                                                c4.375-4.502,8.855-8.901,13.279-13.356c4.085-4.113,8.137-8.259,12.222-12.371c3.993-4.02,8.008-8.017,12.017-12.021
+                                                c3.949-3.946,7.892-7.9,11.858-11.831c4.251-4.212,8.571-8.357,12.78-12.612c4.462-4.511,4.941-3.209-0.296-8.395
+                                                c-3.373-3.339-6.52-6.907-9.881-10.259c-2.946-2.939-6.304-5.5-9.02-8.628c-3.455-3.98-7.949-6.956-10.495-11.852
+                                                c-3.994-7.68-3.649-14.807,0.938-22.133c4.768-7.616,11.653-10.577,20.272-10.563C372.869,47.229,390.363,47.21,407.858,47.211z"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" fill="#2187ff" d="M58.447,408.171c1.4,0,2.472,0,3.542,0
+                                                c135.97,0.009,271.941,0.03,407.911-0.024c4.893-0.002,8.945,1.367,12.279,4.912c2.412,2.564,3.967,5.619,4.114,9.095
+                                                c0.223,5.239,0.108,10.496,0.056,15.744c-0.057,5.633-3.533,11.715-9.809,13.708c-1.845,0.587-3.843,0.98-5.771,0.98
+                                                c-142.22,0.055-284.439,0.065-426.658,0.052c-7.465-0.001-14.359-2.146-19.884-7.239c-3.761-3.467-7.127-7.273-8.496-12.682
+                                                c-1.044-4.128-1.789-8.149-1.788-12.389C13.978,318.684,14,217.039,13.914,115.395c-0.003-3.944,0.544-7.737,2.71-10.75
+                                                c1.664-2.315,4.523-3.957,7.15-5.324c1.716-0.893,3.96-0.974,5.98-1.039c4.411-0.142,8.839,0.142,13.244-0.081
+                                                c7.85-0.397,15.523,7.767,15.513,15.482c-0.135,96.979-0.074,193.958-0.063,290.937C58.447,405.692,58.447,406.764,58.447,408.171z
+                                                "/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" fill="#2187ff" d="M409.717,193.149c2.115,1.208,2.706,2.805,2.703,5.052
+                                                c-0.062,50.89-0.137,101.78,0.056,152.67c0.028,7.663-7.084,13.777-13.33,13.355c-6.053-0.408-12.162-0.281-18.232-0.032
+                                                c-5.5,0.226-12.55-5.618-12.527-12.58c0.128-38.479,0.053-76.96,0.105-115.439c0.002-1.033,0.379-2.354,1.072-3.053
+                                                c13.112-13.22,26.3-26.367,39.477-39.523C409.209,193.43,409.445,193.327,409.717,193.149z"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" fill="#2187ff" d="M212.004,213.667c3.723,3.905,7.446,7.865,11.232,11.766
+                                                c3.573,3.681,7.255,7.258,10.784,10.98c0.704,0.742,1.32,1.935,1.322,2.921c0.068,37.487,0.057,74.973,0.063,112.459
+                                                c0.001,6.249-6.193,12.4-12.438,12.363c-6.497-0.04-13-0.169-19.491,0.042c-5.758,0.188-12.601-6.705-12.582-12.538
+                                                c0.126-38.319,0.087-76.639,0.046-114.958c-0.003-2.504,1.509-3.885,3.044-5.404c3.523-3.486,6.994-7.025,10.527-10.501
+                                                C206.796,218.549,209.152,216.375,212.004,213.667z"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" fill="#2187ff" d="M146.928,319.938c0,10.074-0.344,20.163,0.113,30.217
+                                                c0.34,7.459-6.624,14.669-14.132,14.089c-5.628-0.435-11.335-0.378-16.973-0.01c-6.937,0.452-13.685-6.672-13.583-13.599
+                                                c0.3-20.644,0.179-41.294,0.065-61.94c-0.029-5.317,2.644-8.869,6.646-11.639c1.254-0.868,3.073-1.246,4.644-1.274
+                                                c7.241-0.132,14.487-0.155,21.728-0.033c6.075,0.102,11.416,5.595,11.454,11.72c0.069,10.822,0.02,21.646,0.02,32.47
+                                                C146.915,319.938,146.921,319.938,146.928,319.938z"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" fill="#2187ff" d="M280.128,275.26c14.737,5.889,29.208,4.762,43.761-1.277
+                                                c0,1.215,0,2.02,0,2.824c0,24.725-0.123,49.451,0.076,74.176c0.057,7.054-6.656,13.64-13.312,13.231
+                                                c-6.138-0.377-12.316-0.049-18.476-0.089c-6.862-0.044-12.191-5.341-12.202-12.244c-0.036-24.808-0.017-49.616-0.012-74.425
+                                                C279.964,276.892,280.045,276.327,280.128,275.26z"/>
+                                        </g>
+                                    Seu navegador não aceita SVG.
+                                    </svg>
+                                </div>
+                                <div class="text">
+                                    <h4>Tenha controle sobre seu consumo!</h4>
+                                    <p>Através dos gráficos, você poderá comparar os preços de todas as compras, podendo saber se está pagando mais caro ou não no total de sua compra, tendo base em suas compras anteriores.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Iframe Instagram -->
+            <div class="section section-testimonial wow fadeIn" data-wow-delay="0.25s" id="Instagram">
+                <div class="container">
+                    <h4 class="header-text text-center">Estamos no Instagram:</h4>
+                    <div id="carousel-example-generic" class="carousel fade" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                            <div class="elfsight-app-e57adcf8-9a1b-4ced-bd89-55ac3fdf5b9f" style="font-family: 'Bebas Neue', 'Arial', cursive; -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Iframe Disqus -->
+            <div class="section section-testimonial wow fadeIn" data-wow-delay="0.25s" id="comments">
+                <div class="container">
+                    <h4 class="header-text text-center">Comentários:</h4>
+                    <div id="carousel-example-generic" class="carousel fade" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div id="disqus_thread"></div>
+                            <script>
+                                /**
+                                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                                /*
+                                var disqus_config = function () {
+                                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                                };
+                                */
+                                (function() { // DON'T EDIT BELOW THIS LINE
+                                var d = document, s = d.createElement('script');
+                                s.src = 'https://lcp-lista-de-compras-personalizadas.disqus.com/embed.js';
+                                s.setAttribute('data-timestamp', +new Date());
+                                (d.head || d.body).appendChild(s);
+                                })();
+                            </script>
+                            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            <script id="dsq-count-scr" src="//lcp-lista-de-compras-personalizadas.disqus.com/count.js" async></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section-no-padding wow fadeIn" data-wow-delay="0.25s" >
+                <div class="parallax filter-gradient orange" id="Download" style="background-color:#2187ff; background-image: linear-gradient(to right, #2187ff, #951095);">
+                    <div class="parallax-background">
+                         <div style="background-image: url(images/img/bg_top.png); width: 100%; height: 100%; background-size: 100% 100%"></div>
+                    </div>
+                    <div class="info">
+                        <h1>Faça o Download agora mesmo!</h1>
+                        <p>Baixe agora mesmo o LCP (Lista de Compras Personalizadas) e tenha está aplicação na palma de sua mão, para poder facilitar na criação das listas de compras, assim como a ida ao mercado.</p>
+                        <!-- Donwload do APP -->
+                        <a href="#" class="btn btn-neutral btn-lg btn-fill" title="Download"><i class="fab fa-google-play"></i> Baixar</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="container">
+                    
+
+                    <div class="social-area pull-right">
+                        <p style="font-size: medium; margin-top: 0px">
+                            <a href="/doc" target="_blank" title="Veja a documentação do desenvolvimento da aplicação.">
+                                <i class="fas fa-file-alt"></i> Documentação
+                            </a>  |  
+                            <a href="https://github.com/denilsonfa/LCPListadeComprasPersonalizadas.git" target="_blank" title="Veja o repositório onde está localizado a aplicação.">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </p>
+                        <hr style="margin-top: 0px; margin-bottom: 0px;" />
+                    	<p style="font-size: x-small;">
+                            2021 - EQUIPE LCP: 
+                            <a href="http://instagram.com/denilson_fa" target="_blank">Denilson</a> 
+                            | Izabela 
+                            | Jorge 
+                            | Marcos 
+                            | Weslei
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+</body>
+    <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+    <script src="assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap.js" type="text/javascript"></script>
+    <script src="assets/js/awesome-landing-page.js" type="text/javascript"></script>
+    <!-- <script src="assets/js/scripts.js" type="text/javascript"></script> -->
+</html>
