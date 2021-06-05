@@ -47,10 +47,13 @@
 
 	<!-- titulo -->
 	<title>LCP: Lista de Compras Personalizadas</title>
-	<meta name="title" content="LCP: Aplicação Android para Auxílio na Criação de uma Lista de Compras">	
-	<meta property="og:title" content="LCP: Aplicação Android para Auxílio na Criação de uma Lista de Compras">
-	<meta property="og:site_name" content="LCP: Aplicação Android para Auxílio na Criação de uma Lista de Compras">
-	<meta property="og:description" content="Tenha um maior controle sobre suas compras com a aplicação Android LCP, controle suas cumpras, gerenciamento de estoque.">
+	<meta name="title" content="LCP: Lista de Compras Personalizadas">	
+	<meta property="og:title" content="LCP: Lista de Compras Personalizadas">
+	<meta property="og:site_name" content="LCP: Lista de Compras Personalizadas">
+	<meta property="og:description" content="Este é uma aplicação desenvolvida para a elaboração de listas de compras, simples, prático e rápido. O LCP, é um aplicativo mobile para Android, e tem como principal e única função lhe auxiliar no processo de elaboração de sua lista de compras.">
+    <meta property="og:image" content="https://lcp.eteccruzeiro.dev.br/images/og.image.jpg"/>
+    <meta property="og:url" content="https://lcp.eteccruzeiro.dev.br/" />
+    <meta property="og:type" content="website" />
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -58,6 +61,16 @@
 	<meta name="theme-color" content="#222">
 	<meta name="apple-mobile-web-app-status-bar-style" content="#222">
 	<meta name="msapplication-navbutton-color" content="#222">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PW4P2F2ZQT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-PW4P2F2ZQT');
+    </script>
 
 </head>
     <body class="landing-page landing-page1">
@@ -85,6 +98,11 @@
                 <div class="collapse navbar-collapse" id="example"  style="font-size: small;">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
+                            <a href="#Sobre" title="Sobre o LCP" style="font-size: medium;">
+                                <i class="far fa-question-circle"></i> Sobre
+                            </a>
+                        </li>
+                        <li>
                             <a href="#Instagram" title="Instagram" style="font-size: medium;">
                                 <i class="fab fa-instagram"></i> Instagram
                             </a>
@@ -102,8 +120,7 @@
         <div class="wrapper" id="Inicio">
             <div class="parallax filter-gradient app" data-color="blue" style="background-color:#2187ff; background-image: linear-gradient(to right, #2187ff, #951095);">
                 <div class="parallax-background">
-                    <div style="background-image: url(images/img/bg_top.png); width: 100%; height: 100%; background-size: 100% 100%"></div>
-                    <!-- <img class="parallax-background-image" src="images/img/bg_top.png"> -->
+                    <div style="background-image: url(images/img/bg_top.png); width: 100%; height: 100%; background-size: 100% 100%; background-position: center center;"></div>
                 </div>
                 <div class= "container">
                     <div class="row">
@@ -112,7 +129,7 @@
                                 <h3>LCP - Lista de Compras Personalizadas</h3>
                                 <br>
                                 <p>
-                                    Este é uma aplicação desenvolvida para a elaboração de listas de compras, simples, prático e rápido. O LCP, é um aplicativo mobile para Android, e tem como principal e única função lhe auxiliar no processo de elaboração de sua lista de compras em cada mês.
+                                    Este é uma aplicação desenvolvida para a elaboração de listas de compras, simples, prático e rápido. O LCP, é um aplicativo mobile para Android, e tem como principal e única função lhe auxiliar no processo de elaboração de sua lista de compras.
                                 </p>
                                 <p>
                                     <i class="fas fa-hashtag"></i>ListaComprasPersonalizadas
@@ -138,7 +155,7 @@
             </div>
 
                         <!-- Descrição do APP -->
-            <div class="section section-presentation">
+            <div class="section section-presentation" id="Sobre">
                 <div class="container">
                     <div class="row">                       
                         <div class="col-md-5 col-md-offset-1 wow fadeInLeft"  data-wow-delay="0.75s">
