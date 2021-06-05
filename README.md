@@ -1,6 +1,6 @@
 
 # LCP - Lista de Compras Personalizadas (SITE)
-##### Projeto: LCPListadeComprasPersonalizadas
+##### Projeto: LCPListadeComprasPersonalizadasSite
 ###### Criado por: Denilson Araujo (conta dev)
 
 ![GitHub followers](https://img.shields.io/github/followers/denilsonfa?style=for-the-badge) ![GitHub Repo stars](https://img.shields.io/github/stars/denilsonfa/LCPListadeComprasPersonalizadas?style=for-the-badge) 
